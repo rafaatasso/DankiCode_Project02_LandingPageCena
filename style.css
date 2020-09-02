@@ -210,7 +210,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-bottom: 3rem;
+    padding: 3rem 2rem 0;
 }
 
 .mainSection .infos h3 {
