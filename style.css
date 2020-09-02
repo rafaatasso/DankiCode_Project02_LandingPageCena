@@ -1,0 +1,55 @@
+:root {
+    font-size: 60%;
+    font-family:'Open Sans', sans-serif;
+    --color-background-header: rgb(220,220,220);
+    --color-background-shadow: rgba(117,117,117,1);
+    --color-background-white: rgb(250,250,250);
+    --color-background-gray: rgb(210,210,210);
+    --color-background-blue: #29526d;
+    --color-background-blue-light: #4683AB;
+    --color-button: #033C50;
+    --color-border: #ccc;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background: var(--color-background-header);
+}
+
+.center {
+    display: block;
+}
+
+.center img {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+
+@media (min-width: 450px) {
+    .center {
+        width: 80vw;
+        padding: 1rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .center img {
+        padding: 0;
+        margin: 0;
+    }
+}
