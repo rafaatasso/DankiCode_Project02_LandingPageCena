@@ -8,7 +8,7 @@
     --color-background-gray: rgb(210, 210, 210);
     --color-background-black: rgb(0,0,0);
     --color-background-blue: #29526d;
-    --color-background-blue-light: #4683AB;
+    --color-background-blue-light: #cfe4f3d2;
     --color-button: #033C50;
     --color-text: #525252;
     --color-border: #ccc;
@@ -163,10 +163,126 @@ header {
 	-ms-transform:translateX(-50%) translateY(-50%);
 }
 
+.mainSection {
+    background: var(--color-background-header);
+}
+.mainSection .firstInformation {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+    padding: 4rem 1rem;
+    color: var(--color-background-black);
+}
+
+.mainSection .firstInformation h1{
+    font-size: 2.6rem;
+    font-weight: normal;
+}
+
+.mainSection .firstInformation h3{
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.mainSection .containerGrid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--color-background-blue-light);
+}
+
+.mainSection .containerGrid p {
+    padding: 4rem 1rem;
+    font-size: 1.8rem;
+    color: var(--color-background-black);
+}
+
+.mainSection .containerGrid .apartImg  {
+    width: 100%;
+    height: 90vw; 
+    object-fit:cover;
+}
+
+.mainSection .infos {
+    margin: 3rem 1rem 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.mainSection .infos h3 {
+    font-size: 1.6rem;
+    padding-bottom: 1.5rem;
+}
+
+.mainSection .infos p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+main > footer {
+    margin: 3rem;
+    text-align: center;
+}
+
+main > footer p {
+    font-size: 1.6rem;
+    color: var(--color-text);
+    padding-bottom: 1.5rem;
+}
+
+main > footer img {
+    width: 125px;
+}
 
 @media (min-width: 770px) {
     .createForm {
         margin-right: 6rem;
+    }
+
+    .mainSection .containerGrid {
+        padding-top: 1rem;
+    }
+
+    .mainSection .containerGrid .firstGrid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "text image";
+        column-gap: 20px;
+    }
+
+    .mainSection .containerGrid .firstGrid p {
+        grid-area: text;
+        text-align: center;
+        align-self: center;
+    }
+
+    .mainSection .containerGrid .firstGrid .apartImg {
+        width:100%;
+        height:300px;
+        grid-area: image;
+    }
+
+    .mainSection .containerGrid .secondGrid{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: "image text";
+        column-gap: 20px;
+    }
+
+    .mainSection .containerGrid .secondGrid p {
+        grid-area: text;
+        text-align: center;
+        align-self: center;
+    }
+
+    .mainSection .containerGrid .secondGrid .apartImg {
+        width:100%;
+        height:300px;
+        grid-area: image;
     }
 }
 
@@ -193,5 +309,14 @@ header {
 
     .createForm footer {
         height: 3rem;
+    }
+
+    .mainSection {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .mainSection .containerGrid img {
+        width: 100%;
     }
 }
