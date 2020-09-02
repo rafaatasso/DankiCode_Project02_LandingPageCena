@@ -206,11 +206,10 @@ header {
 }
 
 .mainSection .infos {
-    margin: 3rem 1rem 0;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 3rem 2rem;
+    padding: 3rem;
 }
 
 .mainSection .infos h3 {
