@@ -134,6 +134,7 @@ header {
     margin: 5% 0;
     border-radius: .4rem;
     outline: 0;
+    cursor: pointer;
 }
 
 .createForm footer {
