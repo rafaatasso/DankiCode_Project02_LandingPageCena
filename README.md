@@ -4,6 +4,6 @@ For the structure, we will create a responsive website for one client named [Cen
 
 To see the whole project, [click here](https://cursos.dankicode.com/campus/curso-front-end-completo/projeto-2-estudo-e-proposta).
 
-This project will start with mobile first.
+This project started with mobile first.
 
-To see who it is just [click here](https://landingpagecena.netlify.app/).
+To see who it is [click here](https://landingpagecena.netlify.app/).
